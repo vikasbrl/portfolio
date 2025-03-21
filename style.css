@@ -1,0 +1,270 @@
+
+        body, html {
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(158deg, rgba(0, 0, 0, 1) 0%, rgba(4, 68, 80, 1) 47%, rgba(0, 212, 255, 1) 100%);
+            color: white;
+            font-family: "Poppins", sans-serif;
+            background-image: pexels-adrien-olichon-1257089-2387793jpg;
+
+        }
+        
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: linear-gradient(158deg, rgba(0, 0, 0, 1) 0%, rgba(4, 68, 80, 1) 47%, rgba(0, 212, 255, 1) 100%);
+            padding: 10px 20px;
+            color: white;
+            height: 70px;
+        }
+        .logo{
+            width: 150px; /* Logo का Size */
+            height: 60px;
+            padding-left: 70px;
+            padding-top: 10px;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            display: block;
+            margin: 50px;
+            font-size: 25px;
+        }
+        .navbar a:hover {
+            background-color: #5be9e9;
+            border-radius: 5px;
+        }
+        .nav-links {
+            display: flex;
+            gap: 15px;
+           
+        }
+        .menu-toggle {
+            display: none;
+            cursor: pointer;
+            font-size: 24px;
+        }
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+                flex-direction: column;
+                width: 100%;
+                position: absolute;
+                top: 60px;
+                left: 0;
+                background-color: #0d4441;
+                padding: 10px;
+            }
+            .nav-links.active {
+                display: flex;
+            }
+            .menu-toggle {
+                display: block;
+            }
+        }
+        /* Mobile Responsive Navbar */
+.menu-toggle {
+    display: none;
+    font-size: 30px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+  }
+  
+  @media (max-width: 768px) {
+    .menu-toggle {
+      display: block;
+    }
+    
+   /* Default: nav-links hidden */
+.nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    background-color: #0d4441;
+    padding: 10px;
+}
+
+/* Active: nav-links visible */
+.nav-links.active {
+    display: flex;
+}
+
+  
+    nav ul li {
+      margin: 10px 0;
+    }
+  }
+  .menu-toggle {
+    font-size: 30px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    display: none;
+    padding-top: 0px;
+  }
+  /* Show menu toggle button on mobile */
+  @media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: #0d4441;
+        padding: 10px;
+    }
+    .nav-links.active {
+        display: flex;
+    }
+    .menu-toggle {
+        font-size: 30px;
+        background: none;
+        border: none;
+        color: white;
+        cursor: pointer;
+        position: absolute;
+        right: 20px;
+        top: 15px;
+        display: block;
+        padding-top: 0px;
+          
+          
+    }
+}
+
+        .responsive-section {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 50px;
+            gap: 20px;
+        }
+        .main{
+          font-family: 'Times New Roman', Times, serif;
+          text-align: center;
+          align-items: center;
+          font-size: 50px;
+        }
+        .text-section {
+            flex: 1;
+            font-size: 20px;
+            font-family: 'Times New Roman', Times, serif;
+            margin: 30px;
+            font-weight: 100px;
+            
+        }
+        .image-section {
+            flex: 1;
+            
+        }
+        .image-section img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+        @media (max-width: 768px) {
+            .responsive-section {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+            .image-section {
+                margin-top: 20px;
+            }
+        }
+        /*project section*/
+        
+        .responsive-section1 {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 50px;
+          gap: 20px;
+      }
+      
+      .text-section1 {
+          flex: 1;
+          font-size: 25px;
+      }
+      .main0{
+        font-family: 'Times New Roman', Times, serif;
+          text-align: center;
+          align-items: center;
+          font-size: 50px;
+          color: rgb(232, 70, 70);
+          font-weight: bolder;
+      }
+      .main1{
+        font-size: 50px;
+        
+      }
+      
+      .image-section1 {
+          flex: 1;
+      }
+      
+      .image-section1 img {
+          max-width: 100%;
+          border-radius: 10px;
+      }
+      
+      @media (max-width: 768px) {
+          .responsive-section1 {
+              flex-direction: column;
+              align-items: center;
+              text-align: center;
+          }
+          .image-section1 {
+              margin-top: 20px;
+          }
+      }
+      .responsive-section3{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 50px;
+        gap: 20px;
+    }
+    .image-section3 {
+        flex: 1;
+    }
+    .text-section3 {
+        flex: 1;
+    }
+    .image-section3 img {
+        max-width: 100%;
+        border-radius: 10px;
+    }
+    @media (max-width: 768px) {
+        .responsive-section3 {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        .text-section3 {
+            margin-top: 20px;
+        }
+    }
+    /*FOOTER*/
+    .footer {
+      background-color: #110e3e;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 20px;
+  }
+  .footer p {
+      margin: 5px 0;
+  }
+  
