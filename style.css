@@ -59,10 +59,11 @@ html {
         flex-direction: column;
         width: 100%;
         position: absolute;
-        top: 60px;
+        top: 70px;
         left: 0;
         background-color: #0d4441;
         padding: 10px;
+        text-align: center;
     }
 
     .nav-links.active {
@@ -73,80 +74,8 @@ html {
         display: block;
     }
 }
+/**/
 
-/* Mobile Responsive Navbar */
-.menu-toggle {
-    display: none;
-    font-size: 30px;
-    background: none;
-    border: none;
-    color: white;
-    cursor: pointer;
-}
-
-@media (max-width: 768px) {
-    .menu-toggle {
-        display: block;
-    }
-
-    /* Default: nav-links hidden */
-
-
-    /* Active: nav-links visible */
-    .nav-links.active {
-        display: flex;
-    }
-
-    nav ul li {
-        margin: 10px 0;
-    }
-}
-
-.menu-toggle {
-    font-size: 30px;
-    background: none;
-    border: none;
-    color: white;
-    cursor: pointer;
-    position: absolute;
-    right: 20px;
-    top: 15px;
-    display: none;
-    padding-top: 0px;
-}
-
-/* Show menu toggle button on mobile */
-@media (max-width: 768px) {
-    .nav-links {
-        display: none;
-        flex-direction: column;
-        width: 100%;
-        position: absolute;
-        top: 60px;
-        left: 0;
-        background-color: #0d4441;
-        padding: 10px;
-    }
-
-    .nav-links.active {
-        display: none;
-    }
-
-    .menu-toggle {
-        font-size: 30px;
-        background: none;
-        border: none;
-        color: white;
-        cursor: pointer;
-        position: absolute;
-        right: 20px;
-        top: 15px;
-        display: block;
-        padding-top: 0px;
-
-
-    }
-}
 
 .responsive-section {
     display: flex;

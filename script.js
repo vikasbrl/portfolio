@@ -1,12 +1,18 @@
- // Mobile Menu Toggle
- const menuToggle = document.querySelector(".menu-toggle");
- const navMenu = document.querySelector("nav ul");
+document.addEventListener("DOMContentLoaded", function () {
+  const toggle = document.querySelector('.menu-toggle');
+  const navLinks = document.querySelector('.nav-links');
 
- if (menuToggle) {
-     menuToggle.addEventListener("click", function () {
-         navMenu.classList.toggle("active");
-     });
- }
+  toggle.addEventListener('click', () => {
+      // Navigation Menu को दिखाने और छिपाने के लिए Toggle Class
+      if (navLinks.style.display === "flex") {
+          navLinks.style.display = "none";
+      } else {
+          navLinks.style.display = "flex";
+      }
+  });
+});
+
+
  //ajax form
  $(function () {
     // Get the form.
@@ -58,4 +64,6 @@
         });
     });
   });
+
+///
 
