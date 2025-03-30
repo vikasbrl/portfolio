@@ -101,7 +101,7 @@ html {
 
 .image-section {
     flex: 1;
-
+    
 }
 
 .image-section img {
@@ -117,6 +117,74 @@ html {
 
     .image-section {
         margin-top: 20px;
+    }
+}
+/* Portfolio Section */
+#portfolio {
+    padding: 0px 20px;
+}
+
+.section-title {
+    font-size: 42px;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #5be9e9;
+    text-shadow: 0 0 10px #17b1b1;
+    text-align: center;
+    align-items: center;
+}
+
+/* Portfolio Container */
+.portfolio-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+/* Skill Card */
+.skill {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 25px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    width: 220px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.skill img {
+    width: 100px;
+    height: 100px;
+    transition: transform 0.3s;
+}
+
+.skill:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(91, 233, 233, 0.8);
+}
+
+.skill h3 {
+    margin-top: 10px;
+    font-size: 22px;
+    color: #5be9e9;
+}
+
+/* Fade-in Animation */
+.fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .portfolio-container {
+        flex-direction: column;
+        align-items: center;
     }
 }
 

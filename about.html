@@ -39,6 +39,25 @@
             React.</p>
 
     </div>
+     <!--skills-->
+     <section id="portfolio">
+        <h2 class="section-title">My Skills</h2>
+        <div class="portfolio-container">
+            <div class="skill fade-in">
+                <img src="https://c8.alamy.com/compfr/2f42fe5/icone-orange-3d-html5-isolee-sur-fond-blanc-2f42fe5.jpg" alt="HTML">
+                <h3>HTML</h3>
+            </div>
+            <div class="skill fade-in">
+                <img src="https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582747_960_720.png" alt="CSS">
+                <h3>CSS</h3>
+            </div>
+            <div class="skill fade-in">
+                <img src="https://static.vecteezy.com/system/resources/previews/027/127/463/non_2x/javascript-logo-javascript-icon-transparent-free-png.png" alt="JavaScript">
+                <h3>JavaScript</h3>
+            </div>
+           
+        </div>
+    </section>
     <!-- begin section -->
 
     <div class="section fp-auto-height">
@@ -64,6 +83,24 @@
                 <p>&copy; 2025 Vikas Shamrma. All Rights Reserved.</p>
                 <p>Follow us on <a href="#">Social Media</a></p>
             </div>
+            <script>
+                 document.addEventListener("DOMContentLoaded", function () {
+                        const skills = document.querySelectorAll(".fade-in");
+
+                        function fadeInOnScroll() {
+                            skills.forEach(skill => {
+                                const rect = skill.getBoundingClientRect();
+                                if (rect.top < window.innerHeight - 100) {
+                                    skill.style.opacity = "1";
+                                    skill.style.transform = "translateY(0)";
+                                }
+                            });
+                        }
+
+                        window.addEventListener("scroll", fadeInOnScroll);
+                        fadeInOnScroll();
+                    });
+            </script>
             <script src="script.js"></script>
 
 </body>
